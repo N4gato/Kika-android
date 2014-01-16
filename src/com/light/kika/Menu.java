@@ -23,7 +23,7 @@ public class Menu extends Activity{
 				// TODO: handle exception
 				e.printStackTrace();
 			}finally{
-				Intent first = new Intent("com.light.kika.MainActivity");
+				Intent first = new Intent("com.light.kika.Liste");
 				startActivity(first);
 			}
         	
@@ -37,5 +37,9 @@ public class Menu extends Activity{
 	protected void onPause() {
         super.onPause();
         biber.release();
+        finish();
+        
 }
+	
+	
 }

@@ -30,17 +30,18 @@ public class MainActivity extends Activity {
         tv1 = (TextView) findViewById(R.id.textView);
         tv2 = (TextView) findViewById(R.id.textView1);
         read = (EditText) findViewById(R.id.editText1);
-   
         
+        
+ 		
         add1.setOnClickListener(new View.OnClickListener() {
-			
+        	 
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-			String	quoi = read.getText().toString();
-			conter = Integer.parseInt(quoi); 
+				String	quoi = read.getText().toString();
+		 		conter = Integer.parseInt(quoi);
 			conter++; 
-			read.clearAnimation();
+			
 				tv1.setText("You now :" + conter);
 			}
 		});
@@ -50,11 +51,9 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-				//String	quoi = read.getText().toString();
-				//conter = Integer.parseInt(quoi); 
+				
 				conter--; 
-				//read.clearAnimation();
+				
 					tv1.setText("You now :" + conter);
 			}
 		});
@@ -64,10 +63,9 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				String	quoi = read.getText().toString();
-				conter = Integer.parseInt(quoi); 
+				
 				conter--; 
-				read.clearAnimation();
+				
 					tv2.setText("You now :" + conter);
 			}
 		});
@@ -77,10 +75,9 @@ public class MainActivity extends Activity {
     			@Override
     			public void onClick(View arg0) {
     				// TODO Auto-generated method stub
-    				String	quoi = read.getText().toString();
-    				conter = Integer.parseInt(quoi); 
+    				
     				conter++; 
-    				read.clearAnimation();
+    				
     					tv2.setText("You now :" + conter);
     			}
     		});

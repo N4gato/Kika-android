@@ -38,32 +38,6 @@
           android:background="#FE2E64"
           android:text="TextView" />
 
-      <EditText
-          android:id="@+id/editText1"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_above="@+id/textView1"
-          android:layout_alignLeft="@+id/add1"
-          android:layout_marginBottom="40dp"
-          android:background="#642EFE"
-          android:ems="10"
-          android:inputType="number"
-          android:text="Give a number" 
-          android:gravity="center"
-          >
-
-          <requestFocus />
-      </EditText>
-
-      <Button
-          android:id="@+id/add2"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_above="@+id/sub1"
-          android:layout_alignRight="@+id/editText1"
-          android:background="#8258FA"
-          android:text="Add" />
-
       <Button
           android:id="@+id/add1"
           android:layout_width="wrap_content"
@@ -73,7 +47,7 @@
           android:layout_marginRight="16dp"
           android:layout_marginTop="32dp"
           android:background="#8258FA"
-          android:text="Add" />
+          android:text="Read" />
 
       <TextView
           android:id="@+id/textView1"
@@ -96,5 +70,38 @@
           android:layout_marginTop="20dp"
           android:background="#8258FA"
           android:text="Sub" />
+
+      <EditText
+          android:id="@+id/editText1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/textView1"
+          android:layout_alignParentRight="true"
+          android:layout_marginBottom="35dp"
+          android:background="#642EFE"
+          android:ems="10"
+          android:inputType="number" >
+
+          <requestFocus />
+      </EditText>
+
+      <Button
+          android:id="@+id/add2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/add1"
+          android:layout_alignBottom="@+id/add1"
+          android:layout_alignRight="@+id/textView1"
+          android:background="#8258FA"
+          android:text="Add" />
+
+      <TextView
+          android:id="@+id/textView2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/editText1"
+          android:layout_marginRight="14dp"
+          android:layout_toLeftOf="@+id/editText1"
+          android:text="Number :" />
 
 </RelativeLayout>

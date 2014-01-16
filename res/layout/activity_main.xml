@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" 
+    android:background="#FA5858"
+    >
+
+      <Button
+          android:id="@+id/sub2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/sub1"
+          android:layout_alignBottom="@+id/sub1"
+          android:layout_alignLeft="@+id/add2"
+          android:background="#8258FA"
+          android:text="Sub" />
+
+      <Spinner
+          android:id="@+id/spinner1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/textView"
+          android:layout_alignParentLeft="true" />
+
+      <TextView
+          android:id="@+id/textView"
+          android:layout_width="150px"
+          android:layout_height="300px"
+          android:layout_alignParentTop="true"
+          android:layout_marginRight="14dp"
+          android:layout_marginTop="85dp"
+          android:layout_toLeftOf="@+id/textView1"
+          android:background="#FE2E64"
+          android:text="TextView" />
+
+      <EditText
+          android:id="@+id/editText1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/textView1"
+          android:layout_alignLeft="@+id/add1"
+          android:layout_marginBottom="40dp"
+          android:background="#642EFE"
+          android:ems="10"
+          android:inputType="number"
+          android:text="Give a number" 
+          android:gravity="center"
+          >
+
+          <requestFocus />
+      </EditText>
+
+      <Button
+          android:id="@+id/add2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/sub1"
+          android:layout_alignRight="@+id/editText1"
+          android:background="#8258FA"
+          android:text="Add" />
+
+      <Button
+          android:id="@+id/add1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignRight="@+id/textView"
+          android:layout_below="@+id/textView"
+          android:layout_marginRight="16dp"
+          android:layout_marginTop="32dp"
+          android:background="#8258FA"
+          android:text="Add" />
+
+      <TextView
+          android:id="@+id/textView1"
+          android:layout_width="150px"
+          android:layout_height="300px"
+          android:layout_alignBaseline="@+id/textView"
+          android:layout_alignBottom="@+id/textView"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="49dp"
+          android:background="#FE2E64"
+          android:gravity="right"
+          android:text="TextView" />
+
+      <Button
+          android:id="@+id/sub1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/add1"
+          android:layout_below="@+id/add1"
+          android:layout_marginTop="20dp"
+          android:background="#8258FA"
+          android:text="Sub" />
+
+</RelativeLayout>

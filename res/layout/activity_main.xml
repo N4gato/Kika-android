@@ -10,16 +10,6 @@
     android:background="#FA5858"
     >
 
-      <Button
-          android:id="@+id/sub2"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_alignBaseline="@+id/sub1"
-          android:layout_alignBottom="@+id/sub1"
-          android:layout_alignLeft="@+id/add2"
-          android:background="#8258FA"
-          android:text="Sub" />
-
       <Spinner
           android:id="@+id/spinner1"
           android:layout_width="wrap_content"
@@ -55,26 +45,6 @@
           <requestFocus />
       </EditText>
 
-      <Button
-          android:id="@+id/add2"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_above="@+id/sub1"
-          android:layout_alignRight="@+id/editText1"
-          android:background="#8258FA"
-          android:text="Add" />
-
-      <Button
-          android:id="@+id/add1"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_alignRight="@+id/textView"
-          android:layout_below="@+id/textView"
-          android:layout_marginRight="16dp"
-          android:layout_marginTop="32dp"
-          android:background="#8258FA"
-          android:text="Add" />
-
       <TextView
           android:id="@+id/textView1"
           android:layout_width="150px"
@@ -91,9 +61,39 @@
           android:id="@+id/sub1"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:layout_alignLeft="@+id/add1"
           android:layout_below="@+id/add1"
-          android:layout_marginTop="20dp"
+          android:layout_toRightOf="@+id/add1"
+          android:background="#8258FA"
+          android:text="Sub" />
+
+      <Button
+          android:id="@+id/add1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentLeft="true"
+          android:layout_marginBottom="43dp"
+          android:layout_marginLeft="18dp"
+          android:background="#8258FA"
+          android:text="Add" />
+
+      <Button
+          android:id="@+id/add2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/textView1"
+          android:layout_alignRight="@+id/editText1"
+          android:layout_marginBottom="22dp"
+          android:background="#8258FA"
+          android:text="Add" />
+
+      <Button
+          android:id="@+id/sub2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/textView1"
+          android:layout_marginTop="25dp"
+          android:layout_toRightOf="@+id/textView"
           android:background="#8258FA"
           android:text="Sub" />
 

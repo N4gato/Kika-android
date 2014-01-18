@@ -10,7 +10,7 @@ import android.widget.TextView;
 public class MainActivity extends Activity {
 
 	int conter=0;
-	Button add2,readd;
+	Button add2,readd,add1;
 	TextView tv1,tv2;
 	EditText read;
 	
@@ -20,12 +20,12 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         
        
-        add2 = (Button) findViewById(R.id.add);
+   
         tv1 = (TextView) findViewById(R.id.textView);
         tv2 = (TextView) findViewById(R.id.textView1);
         read = (EditText) findViewById(R.id.editText1);
-        readd = (Button) findViewById(R.id.read);
-        
+        add2 = (Button) findViewById(R.id.add2);
+        add1 = (Button) findViewById(R.id.add1);
         
  		
         add2.setOnClickListener(new View.OnClickListener() {

@@ -27,6 +27,7 @@ public final class R {
     public static final class id {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         public static final int action_settings=0x7f090006;
         public static final int add=0x7f090004;
         public static final int editText1=0x7f090001;
@@ -39,18 +40,25 @@ public final class R {
 >>>>>>> 06ffa5de32253deb4076440e1f23e136a8536015
         public static final int action_settings=0x7f090009;
         public static final int add1=0x7f090006;
+=======
+        public static final int action_settings=0x7f090008;
+        public static final int add1=0x7f090007;
+>>>>>>> parent of 06ffa5d... Liste of activities
         public static final int add2=0x7f090002;
-        public static final int editText1=0x7f090007;
+        public static final int editText1=0x7f090006;
         public static final int spinner1=0x7f090003;
         public static final int sub1=0x7f090001;
         public static final int sub2=0x7f090000;
         public static final int textView=0x7f090004;
         public static final int textView1=0x7f090005;
+<<<<<<< HEAD
         public static final int textView2=0x7f090008;
 <<<<<<< HEAD
 >>>>>>> 06ffa5de32253deb4076440e1f23e136a8536015
 =======
 >>>>>>> 06ffa5de32253deb4076440e1f23e136a8536015
+=======
+>>>>>>> parent of 06ffa5d... Liste of activities
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;

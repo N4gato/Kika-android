@@ -49,6 +49,7 @@ public class MainActivity extends Activity {
         read = (EditText) findViewById(R.id.editText1);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         readd = (Button) findViewById(R.id.read);
         
         
@@ -71,15 +72,19 @@ public class MainActivity extends Activity {
         
  		
 >>>>>>> 06ffa5de32253deb4076440e1f23e136a8536015
+=======
+   
+        
+>>>>>>> parent of 06ffa5d... Liste of activities
         add1.setOnClickListener(new View.OnClickListener() {
-        	 
+			
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				String	quoi = read.getText().toString();
-		 		conter = Integer.parseInt(quoi);
+			String	quoi = read.getText().toString();
+			conter = Integer.parseInt(quoi); 
 			conter++; 
-			
+			read.clearAnimation();
 				tv1.setText("You now :" + conter);
 			}
 		});
@@ -89,9 +94,11 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View arg0) {
-				
+				// TODO Auto-generated method stub
+				//String	quoi = read.getText().toString();
+				//conter = Integer.parseInt(quoi); 
 				conter--; 
-				
+				//read.clearAnimation();
 					tv1.setText("You now :" + conter);
 >>>>>>> 06ffa5de32253deb4076440e1f23e136a8536015
 >>>>>>> e1821e46487381887b742d074d9717428f87cc47
@@ -103,6 +110,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 				String	quoi = read.getText().toString();
@@ -124,8 +132,12 @@ public class MainActivity extends Activity {
 =======
 >>>>>>> 06ffa5de32253deb4076440e1f23e136a8536015
 				
+=======
+				String	quoi = read.getText().toString();
+				conter = Integer.parseInt(quoi); 
+>>>>>>> parent of 06ffa5d... Liste of activities
 				conter--; 
-				
+				read.clearAnimation();
 					tv2.setText("You now :" + conter);
 			}
 		});
@@ -135,9 +147,10 @@ public class MainActivity extends Activity {
     			@Override
     			public void onClick(View arg0) {
     				// TODO Auto-generated method stub
-    				
+    				String	quoi = read.getText().toString();
+    				conter = Integer.parseInt(quoi); 
     				conter++; 
-    				
+    				read.clearAnimation();
     					tv2.setText("You now :" + conter);
     			}
     		});

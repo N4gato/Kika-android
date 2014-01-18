@@ -26,12 +26,16 @@ public class MainActivity extends Activity {
         read = (EditText) findViewById(R.id.editText1);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> kikaandBr1
         readd = (Button) findViewById(R.id.read);
         
         
  		
         add2.setOnClickListener(new View.OnClickListener() {
        	 
+<<<<<<< HEAD
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
@@ -71,6 +75,15 @@ public class MainActivity extends Activity {
 				
 					tv1.setText("You now :" + conter);
 >>>>>>> 06ffa5de32253deb4076440e1f23e136a8536015
+=======
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				
+			conter++; 
+			
+				tv1.setText("You now :" + conter);
+>>>>>>> kikaandBr1
 			}
 		});
    
@@ -84,6 +97,7 @@ public class MainActivity extends Activity {
 				String	quoi = read.getText().toString();
 				conter = Integer.parseInt(quoi);
 				tv2.setText("Thanks: You did good to enter such a number");
+<<<<<<< HEAD
 			}
 		});
         
@@ -119,6 +133,13 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
 >>>>>>> 06ffa5de32253deb4076440e1f23e136a8536015
+=======
+			}
+		});
+        
+        
+      
+>>>>>>> kikaandBr1
     }
     
 }

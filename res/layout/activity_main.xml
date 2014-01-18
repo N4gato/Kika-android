@@ -92,6 +92,50 @@
         android:background="#8258FA"
         android:text="@string/read" />
 
+<<<<<<< HEAD
+      <EditText
+          android:id="@+id/editText1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/textView1"
+          android:layout_alignParentRight="true"
+          android:layout_marginBottom="35dp"
+          android:background="#642EFE"
+          android:ems="10"
+          android:inputType="number" >
+
+          <requestFocus />
+      </EditText>
+
+      <Button
+          android:id="@+id/add2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/add1"
+          android:layout_alignBottom="@+id/add1"
+          android:layout_alignRight="@+id/textView1"
+=======
+      <Button
+          android:id="@+id/add1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignRight="@+id/textView"
+          android:layout_below="@+id/textView"
+          android:layout_marginRight="16dp"
+          android:layout_marginTop="32dp"
+>>>>>>> 06ffa5de32253deb4076440e1f23e136a8536015
+          android:background="#8258FA"
+          android:text="Read" />
+
+      <TextView
+          android:id="@+id/textView2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/editText1"
+          android:layout_marginRight="14dp"
+          android:layout_toLeftOf="@+id/editText1"
+          android:text="Number :" />
+
       <EditText
           android:id="@+id/editText1"
           android:layout_width="wrap_content"

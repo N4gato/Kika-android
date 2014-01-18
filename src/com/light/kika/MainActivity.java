@@ -25,6 +25,7 @@ public class MainActivity extends Activity {
         tv2 = (TextView) findViewById(R.id.textView1);
         read = (EditText) findViewById(R.id.editText1);
 <<<<<<< HEAD
+<<<<<<< HEAD
         readd = (Button) findViewById(R.id.read);
         
         
@@ -42,6 +43,11 @@ public class MainActivity extends Activity {
         
         
  		
+=======
+        
+        
+ 		
+>>>>>>> 06ffa5de32253deb4076440e1f23e136a8536015
         add1.setOnClickListener(new View.OnClickListener() {
         	 
 			@Override
@@ -74,6 +80,7 @@ public class MainActivity extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 <<<<<<< HEAD
+<<<<<<< HEAD
 				String	quoi = read.getText().toString();
 				conter = Integer.parseInt(quoi);
 				tv2.setText("Thanks: You did good to enter such a number");
@@ -83,6 +90,8 @@ public class MainActivity extends Activity {
         
       
 =======
+=======
+>>>>>>> 06ffa5de32253deb4076440e1f23e136a8536015
 				
 				conter--; 
 				

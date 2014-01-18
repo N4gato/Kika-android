@@ -24,6 +24,7 @@ public class MainActivity extends Activity {
         tv1 = (TextView) findViewById(R.id.textView);
         tv2 = (TextView) findViewById(R.id.textView1);
         read = (EditText) findViewById(R.id.editText1);
+<<<<<<< HEAD
         readd = (Button) findViewById(R.id.read);
         
         
@@ -37,6 +38,33 @@ public class MainActivity extends Activity {
 			conter++; 
 			
 				tv1.setText("You now :" + conter);
+=======
+        
+        
+ 		
+        add1.setOnClickListener(new View.OnClickListener() {
+        	 
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				String	quoi = read.getText().toString();
+		 		conter = Integer.parseInt(quoi);
+			conter++; 
+			
+				tv1.setText("You now :" + conter);
+			}
+		});
+        
+        
+        sub1.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				
+				conter--; 
+				
+					tv1.setText("You now :" + conter);
+>>>>>>> 06ffa5de32253deb4076440e1f23e136a8536015
 			}
 		});
    
@@ -45,6 +73,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
+<<<<<<< HEAD
 				String	quoi = read.getText().toString();
 				conter = Integer.parseInt(quoi);
 				tv2.setText("Thanks: You did good to enter such a number");
@@ -53,6 +82,34 @@ public class MainActivity extends Activity {
         
         
       
+=======
+				
+				conter--; 
+				
+					tv2.setText("You now :" + conter);
+			}
+		});
+        	
+        	add2.setOnClickListener(new View.OnClickListener() {
+    			
+    			@Override
+    			public void onClick(View arg0) {
+    				// TODO Auto-generated method stub
+    				
+    				conter++; 
+    				
+    					tv2.setText("You now :" + conter);
+    			}
+    		});
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+>>>>>>> 06ffa5de32253deb4076440e1f23e136a8536015
     }
     
 }

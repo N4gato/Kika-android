@@ -24,7 +24,15 @@ public class Liste extends ListActivity {
 		super.onListItemClick(l, v, position, id);
 		String choosen = Classes[position];
 		try {
+<<<<<<< HEAD
+<<<<<<< HEAD
+			Class<?> ourClass = Class.forName("com.light.kika." + choosen);
+=======
 			Class ourClass = Class.forName("com.light.kika." + choosen);
+>>>>>>> 06ffa5de32253deb4076440e1f23e136a8536015
+=======
+			Class ourClass = Class.forName("com.light.kika." + choosen);
+>>>>>>> 06ffa5de32253deb4076440e1f23e136a8536015
 			Intent path = new Intent(Liste.this, ourClass);
 			startActivity(path);
 		} catch (ClassNotFoundException e) {
